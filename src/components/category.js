@@ -1,9 +1,12 @@
+import { getAll } from "../api/category";
+
 const Category = {
-    render() {
-        return /*html*/ `
+        async render() {
+            const { data } = await getAll();
+            return /*html*/ `
         <div class="hidden lg:block">
                         <div class="my-2 mb-6">
-                            <h1 class="text-2xl font-bold text-white">Danh mục sản phẩm</h1>
+                            <h2 class="text-base font-normal leading-7 sm:text-2xl sm:truncate text-gray-900">Danh mục sản phẩm</h2>
                         </div>
                         <ul>
                             <li class="mb-6">
@@ -21,32 +24,15 @@ const Category = {
                                     <input type="search" name="search" class="w-full px-4 py-2 pl-12 rounded shadow outline-none" placeholder="Search...">
                                 </div>
                             </li>
-                            <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                                <a href="/admin/dashboad" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
-Quần áo
+                            ${data.map((post)=> `
+                                <li class=" mb-2 rounded hover:shadow hover:bg-zinc-900 hover:text-blue-600">
+                                <h3 class="inline-block w-full h-full px-3 py-2 text-lg text-base font-extralight leading-7 sm:text-2xl sm:truncate text-gray-900 hover:text-white" ><a href="" >
+                                   ${post.title}
                                 </a>
-                            </li>
-                            <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                                <a href="/admin/NewList" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
-                                    Túi xách
-                                </a>
+                                </h3> 
 
                             </li>
-                            <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                                <a href="/admin/News" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
-                               Giày dép
-                                </a>
-                            </li>
-                            <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                                <a href="/admin/new/:id/edit/" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
-                                    Phụ kiện
-                                </a>
-                            </li>
-                            <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                                <a href="/" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
-                                 Mẹ & bé
-                                </a>
-                            </li>
+                                `).join("")}
                         </ul>
                     </div>
         `

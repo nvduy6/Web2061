@@ -14,9 +14,7 @@ const Menudashboad = {
     </div>
 
     <div class="ml-4">
-        <div class="inline-block w-full h-full px-3 py-2 font-bold text-white">
-            Nguyễn Văn Duy
-        </div>
+        <div class="inline-block w-full h-full font-bold text-white" id="username"></div>
     </div>
 </div>
         <ul class="mt-4">
@@ -41,7 +39,7 @@ const Menudashboad = {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
-                    Home
+                    Trang chủ
                 </a>
             </li>
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
@@ -52,30 +50,41 @@ const Menudashboad = {
                             d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
                             clip-rule="evenodd" />
                     </svg>
-                    Blogs
+                   Danh sách sản phẩm
                 </a>
                 
             </li>
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                <a href="/admin/AddNews" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                <a href="/category/list" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                     </svg>
-                    Add News
+                    Danh mục sản phẩm
                 </a>
             </li>
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                <a href="/admin/New/id/edit" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                <a href="/user" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
-                    Inbox
+                    Tài khoản
                 </a>
             </li>
+            <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
+                <a href="" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  Đơn hàng
+                </a>
+            </li>
+            
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
                 <a href="/" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
@@ -89,6 +98,10 @@ const Menudashboad = {
         </ul>
     </div>
         `
+    },
+    afterRender() {
+        const username = document.querySelector("#username");
+        username.innerHTML = JSON.parse(localStorage.getItem('user')).username;
     }
 };
 export default Menudashboad;

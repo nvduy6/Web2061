@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "title": "ÁO POLO CÀI KHÓA KÉO",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645368566/tyqmkcca3i8uswviarts.jpg",
+      "desc": "CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các ",
+      "category": "Áo polo",
+      "price": "120000",
+      "id": 1
+    },
+    {
+      "title": "ÁO POLO DỆT KIM PHỐI MÀU",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645368640/x0imvpgz2gerwwer8m4z.jpg",
+      "desc": "CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các ",
+      "category": "Áo polo",
+      "price": "150000",
+      "id": 2
+    },
+    {
+      "title": "ÁO POLO VẢI BÓNG NHẸ",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645368720/n0cv1oaedejbjmkrkisc.jpg",
+      "desc": "Care for water: được sản xuất với ít nước hơn.\n\nChúng tôi gắn thẻ Join Life cho các sản phẩm may mặc được sản xuất bằng những công nghệ và nguyên liệu giúp chúng tôi giảm thiểu tác động của các sản phẩm của mình tới môi trường. ",
+      "category": "Áo polo",
+      "price": "185000",
+      "id": 3
+    },
+    {
+      "title": "ÁO POLO VẢI DỆT PIQUE",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645369032/wnpfuzwomxwpyuwg84mi.jpg",
+      "desc": "Áo polo vải cotton dệt kiểu pique. Cổ ve lật, cài khuy phía trước. Tay ngắn, bo viền bằng vải gân. Gấu xẻ hai bên.",
+      "category": "Áo polo",
+      "price": "15000",
+      "id": 4
+    },
+    {
+      "title": "ÁO POLO",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645369114/ugompfrnf2dekjwqbp8s.jpg",
+      "desc": "Áo polo vải cotton dệt kiểu pique. Cổ ve lật, cài khuy phía trước. Tay ngắn, bo viền bằng vải gân. Gấu xẻ hai bên.",
+      "category": "Áo polo",
+      "price": "230000",
+      "id": 5
+    },
+    {
+      "title": "Thắt lưng",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645369727/zeefvi4xqprmtnplzp0l.jpg",
+      "desc": "Sẽ thật quê mùa và thiếu thẩm mỹ nếu bạn mặc một chiếc quần âu có con đỉa mà thiếu thắt lưng. Đặc biệt trong những trường hợp trang trọng như đi gặp khách hàng hay ở nơi làm việc. Chính vì thế, một chiếc thắt lưng da nam không những được sử dụng .",
+      "category": "Thắt lưng",
+      "price": "12000",
+      "id": 6
+    },
+    {
+      "title": "THẮT LƯNG DA NAM ARISTINO",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645369936/lgspybagu2g2rmcdp9uc.jpg",
+      "desc": "cao cấp với đường chỉ may tỉ mỉ, chắc chắn theo tiêu chuẩn xuất khẩu Châu Âu",
+      "category": "Thắt lưng",
+      "price": "12000",
+      "id": 7
+    },
+    {
+      "title": "Giay nam Louis Vuitton",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645370334/gyy8ikk8onfaoicb7c3w.jpg",
+      "desc": "cao cấp với đường chỉ may tỉ mỉ, chắc chắn theo tiêu chuẩn xuất khẩu Châu Âu",
+      "category": "Giày",
+      "price": "3500000",
+      "id": 8
+    }
+  ],
+  "categorys": [
+    {
+      "title": "Áo polo ",
+      "id": 1
+    },
+    {
+      "title": "Thắt lưng",
+      "id": 2
+    },
+    {
+      "title": "Giày",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "title": "Nước hoa1"
+    }
+  ],
+  "users": [
+    {
+      "email": "duynvph15542@fpt.edu.vn",
+      "password": "$2a$10$E70AfCQ3RRXHR4r22qnRze7NivIdeRtE6l8P5j8ZO2mCQ7OHhv8rO",
+      "username": "duynvph15542",
+      "phone": "0962596202",
+      "id": 2
+    },
+    {
+      "email": "duynguyenvan328@gmail.com",
+      "password": "$2a$10$vijlZHNnVa8pA4vFRDgmo.O6G51hrJmq564nLl6DSxuyPs2Y3Rt9K",
+      "username": "van duy",
+      "phone": "1234578",
+      "id": 3
+    },
+    {
+      "email": "bachnvph15542@fpt.edu.vn",
+      "password": "$2a$10$MQqYZ2P/HnKCJxZz2/E8ReXfsqtYiortum../mw6lRbF1jrw9ILJ6",
+      "username": "khainq",
+      "phone": "1234578",
+      "id": 4
+    }
+  ]
+}
