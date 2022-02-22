@@ -69,8 +69,11 @@ const AddProduct = {
               <div class="mt-1">
                <select name="day" id="category" class="focus:ring-indigo-500 focus:border-indigo-800 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300">
                  ${data.map((post)=> `
+                
                  <option  >${post.title} </option>
+                 
                  ` )}
+                
              
               </select>
               </div>
