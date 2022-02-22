@@ -15,6 +15,8 @@ import New from "./pages/gioithieu";
 import HomePages from "./pages/home";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
+import DetailCategoryPage from "./pages/detail_cate"
+import { data } from "jquery";
 const router = new Navigo("/", { linksSelector: 'a' });
 const print = async(content, id) => {
     document.getElementById("app").innerHTML = await content.render(id);
@@ -43,6 +45,7 @@ router.on({
     "/cart": () => print(CartPage),
     "/signup": () => print(Signup),
     "/admin/dashoad": () => print(Dashboard),
+    "/category/:id": ({ data }) => print(DetailCategoryPage, data.id),
     "/user": () => print(ListUser),
     "/category/list": () => print(ListCategory),
     "/category/add": () => print(AddCategory),

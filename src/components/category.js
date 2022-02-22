@@ -1,8 +1,9 @@
-import { getAll } from "../api/category";
+import { getAllCate } from "../api/product";
+
 
 const Category = {
         async render() {
-            const { data } = await getAll();
+            const { data: categorys } = await getAllCate();
             return /*html*/ `
         <div class="hidden lg:block">
                         <div class="my-2 mb-6">
@@ -24,10 +25,11 @@ const Category = {
                                     <input type="search" name="search" class="w-full px-4 py-2 pl-12 rounded shadow outline-none" placeholder="Search...">
                                 </div>
                             </li>
-                            ${data.map((post)=> `
+                            ${categorys.map((category)=> `
                                 <li class=" mb-2 rounded hover:shadow hover:bg-zinc-900 hover:text-blue-600">
-                                <h3 class="inline-block w-full h-full px-3 py-2 text-lg text-base font-extralight leading-7 sm:text-2xl sm:truncate text-gray-900 hover:text-white" ><a href="" >
-                                   ${post.title}
+                                <h3 class="inline-block w-full h-full px-3 py-2 text-lg text-base font-extralight leading-7 sm:text-2xl sm:truncate text-gray-900 hover:text-white" >
+                                <a href="/category/${category.id}" >
+                                   ${category.title}
                                 </a>
                                 </h3> 
 

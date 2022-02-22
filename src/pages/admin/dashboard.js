@@ -3,10 +3,11 @@ import Menudashboad from "../../components/menudashboad";
 
 const Dashboard = {
     async render() {
-        const { data } = await getAll()
+        const { data: products } = await getAll()
+            // const { data: users } = await getAll()
         return /* html */ `
         <div class="flex h-screen  ">
-            <div class="px-4 py-2 bg-gray-500 bg-indigo-600 lg:w-1/4 ">
+            <div class="px-4 py-2 bg-gray-500 bg-indigo-600 ">
         ${Menudashboad.render()}
             </div>
         
@@ -52,7 +53,7 @@ const Dashboard = {
                     </div>
                     <div class="mx-4">
                     <a href="/admin/NewList">
-                        <h4 class="text-2xl font-semibold text-gray-700">${data.length}</h4>
+                        <h4 class="text-2xl font-semibold text-gray-700">${products.length}</h4>
                         <div class="text-gray-500">Quản lý sản phẩm</div>
                         </a>
                     </div>

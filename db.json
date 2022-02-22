@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "title": "ÁO POLO CÀI KHÓA KÉO",
-      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645368566/tyqmkcca3i8uswviarts.jpg",
-      "desc": "CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các ",
-      "category": "Áo polo",
-      "price": "120000",
-      "id": 1
+      "id": 1,
+      "title": "ÁO POLO CÀI KHÓA KÉO12",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645424348/jakhjtl0h2cxcfjfhsvq.jpg",
+      "desc": "                  CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các \n                  ",
+      "category": "                  CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các \n                  ",
+      "price": "120000"
     },
     {
       "title": "ÁO POLO DỆT KIM PHỐI MÀU",
@@ -30,7 +30,8 @@
       "desc": "Áo polo vải cotton dệt kiểu pique. Cổ ve lật, cài khuy phía trước. Tay ngắn, bo viền bằng vải gân. Gấu xẻ hai bên.",
       "category": "Áo polo",
       "price": "15000",
-      "id": 4
+      "id": 4,
+      "categoryId": 2
     },
     {
       "title": "ÁO POLO",
@@ -46,7 +47,8 @@
       "desc": "Sẽ thật quê mùa và thiếu thẩm mỹ nếu bạn mặc một chiếc quần âu có con đỉa mà thiếu thắt lưng. Đặc biệt trong những trường hợp trang trọng như đi gặp khách hàng hay ở nơi làm việc. Chính vì thế, một chiếc thắt lưng da nam không những được sử dụng .",
       "category": "Thắt lưng",
       "price": "12000",
-      "id": 6
+      "id": 6,
+      "categoryId": 2
     },
     {
       "title": "THẮT LƯNG DA NAM ARISTINO",
@@ -54,7 +56,8 @@
       "desc": "cao cấp với đường chỉ may tỉ mỉ, chắc chắn theo tiêu chuẩn xuất khẩu Châu Âu",
       "category": "Thắt lưng",
       "price": "12000",
-      "id": 7
+      "id": 7,
+      "categoryId": 2
     },
     {
       "title": "Giay nam Louis Vuitton",
@@ -77,10 +80,6 @@
     {
       "title": "Giày",
       "id": 3
-    },
-    {
-      "id": 4,
-      "title": "Nước hoa1"
     }
   ],
   "users": [

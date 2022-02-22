@@ -1,11 +1,11 @@
 import Menudashboad from "../../../components/menudashboad";
-import { getAll, remove } from "../../../api/category";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
 import { reRender } from "../../../../utils/render";
+import { getAllCate, removeCate } from "../../../api/product";
 const ListCategory = {
         async render() {
-            const { data } = await getAll();
+            const { data } = await getAllCate();
             return /* html */ `
 
             <div class="flex h-screen">
@@ -108,7 +108,7 @@ const ListCategory = {
             button.addEventListener('click', () => {
                 const confirm = window.confirm("Bạn có chắc chắn muốn xóa không?");
                 if(confirm){
-                    remove(id).then(() => toastr.success("Bạn đã xóa thành công"));
+                    removeCate(id).then(() => toastr.success("Bạn đã xóa thành công"));
                     reRender(ListCategory,"#app")
                 }
             })
