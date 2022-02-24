@@ -68,9 +68,10 @@ const AddProduct = {
                </label>
               <div class="mt-1">
                <select name="day" id="category" class="focus:ring-indigo-500 focus:border-indigo-800 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300">
-                 ${data.map((post)=> `
+               <option value="">-- Chọn danh mục sản phẩm --</option>
+                 ${data.map((cate)=> `
                 
-                 <option  >${post.title} </option>
+                 <option value="${cate.id}" >${cate.title} </option>
                  
                  ` )}
                 
@@ -108,6 +109,7 @@ const AddProduct = {
         const formAdd = document.querySelector('#form-add-post');
         const imgPost = document.querySelector('#img-post');
         const imgPreview = document.querySelector("#img-preview");
+        const postcate = document.querySelector('#category');
         let imgLink = "";
         imgPost.addEventListener('change', function(e){
           imgPreview.src = URL.createObjectURL(e.target.files[0])
@@ -140,7 +142,7 @@ const AddProduct = {
               "title": document.querySelector('#title-post').value,
               "img": imgLink || "",
               "desc": document.querySelector('#desc-post').value,
-              "category": document.querySelector('#category').value,
+              "categoryId":+postcate.value,
               "price": document.querySelector('#price-post').value,
           }).then(document.location.href = "/admin/NewList")
           reRender(ListProduct, "#product");

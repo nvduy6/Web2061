@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 1,
-      "title": "ÁO POLO CÀI KHÓA KÉO12",
-      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645424348/jakhjtl0h2cxcfjfhsvq.jpg",
-      "desc": "                  CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các \n                  ",
-      "category": "                  CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các \n                  ",
+      "title": "ÁO POLO CÀI KHÓA KÉO123",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645625432/kqrnnyzxuho2glj8ufp6.jpg",
+      "desc": "                                                      CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các \n                  \n                  \n                  ",
+      "category": "                                                      CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các \n                  \n                  \n                  ",
       "price": "120000"
     },
     {
@@ -14,7 +14,8 @@
       "desc": "CHẤT LIỆU\nChúng tôi đang triển khai các chương trình giám sát nhằm đảm bảo việc tuân thủ các tiêu chuẩn về độ an toàn, tính lành mạnh và chất lượng của các sản phẩm của chúng tôi. \n\nTiêu chuẩn Green to Wear 2.0 nhằm mục đích giảm thiểu tác động của quá trình sản xuất hàng dệt may tới môi trường. Để thực hiện được mục tiêu này, chúng tôi đã xây dựng chương trình The List của Inditex, theo đó giúp chúng tôi đảm bảo các ",
       "category": "Áo polo",
       "price": "150000",
-      "id": 2
+      "id": 2,
+      "categoryId": 1
     },
     {
       "title": "ÁO POLO VẢI BÓNG NHẸ",
@@ -22,7 +23,8 @@
       "desc": "Care for water: được sản xuất với ít nước hơn.\n\nChúng tôi gắn thẻ Join Life cho các sản phẩm may mặc được sản xuất bằng những công nghệ và nguyên liệu giúp chúng tôi giảm thiểu tác động của các sản phẩm của mình tới môi trường. ",
       "category": "Áo polo",
       "price": "185000",
-      "id": 3
+      "id": 3,
+      "categoryId": 1
     },
     {
       "title": "ÁO POLO VẢI DỆT PIQUE",
@@ -31,7 +33,7 @@
       "category": "Áo polo",
       "price": "15000",
       "id": 4,
-      "categoryId": 2
+      "categoryId": 1
     },
     {
       "title": "ÁO POLO",
@@ -39,7 +41,8 @@
       "desc": "Áo polo vải cotton dệt kiểu pique. Cổ ve lật, cài khuy phía trước. Tay ngắn, bo viền bằng vải gân. Gấu xẻ hai bên.",
       "category": "Áo polo",
       "price": "230000",
-      "id": 5
+      "id": 5,
+      "categoryId": 1
     },
     {
       "title": "Thắt lưng",
@@ -65,7 +68,16 @@
       "desc": "cao cấp với đường chỉ may tỉ mỉ, chắc chắn theo tiêu chuẩn xuất khẩu Châu Âu",
       "category": "Giày",
       "price": "3500000",
-      "id": 8
+      "id": 8,
+      "categoryId": 3
+    },
+    {
+      "title": "Giày thể thao nam 2020",
+      "img": "http://res.cloudinary.com/nguyenvanduy/image/upload/v1645623793/ksfg8zc7axsfi79pcwgo.png",
+      "desc": "Giày thể thao nam 2019 cao cấp hàng hiệu, MS_BD61630D mang màu sắc đen, là một trong hai màu cổ điển nhưng không bao giờ hết hot, được nhiều bạn trẻ ưa thíhc. Vẫn sử dụng những chất liệu cao cấp của Bayeks, mẫu giày thể thao nam có chất lượng rất tốt, thiết kế đẹp và luôn luôn làm hài lòng người sử dụng. Xem thêm chi tiết bên dưới!!! #12/9/2020Chi",
+      "categoryId": 3,
+      "price": "125000",
+      "id": 9
     }
   ],
   "categorys": [
@@ -80,6 +92,10 @@
     {
       "title": "Giày",
       "id": 3
+    },
+    {
+      "title": "Nước hoa",
+      "id": 4
     }
   ],
   "users": [

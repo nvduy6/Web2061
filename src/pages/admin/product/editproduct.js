@@ -1,9 +1,11 @@
 import axios from "axios";
+// import { getAll } from "../../../api/category";
 import {get, update } from "../../../api/product";
 import Menudashboad from "../../../components/menudashboad";
 import ListProduct from "./product";
 const EditProduct = {
     async render(id) {
+        // const { data: cateList } = await getAll()
         const { data } = await get(id);
         return /* html */ `
         <div class="flex h-screen">
@@ -54,6 +56,16 @@ const EditProduct = {
                   </textarea>
                 </div>
               </div>
+              <div>
+               <label for="about" class="block text-sm font-medium text-gray-700">
+                Danh mục sản phẩm
+               </label>
+              <div class="mt-1">
+               <select name="day" id="category" class="focus:ring-indigo-500 focus:border-indigo-800 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300">
+               <option value="">-- Chọn danh mục sản phẩm --</option> 
+              </select>
+              </div>
+            </div>
               <div>
               <label for="about" class="block text-sm font-medium text-gray-700">
                Giá

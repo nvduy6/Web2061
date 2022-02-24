@@ -4,6 +4,7 @@ import toastr from "toastr";
 import "toastr/build/toastr.min.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import $ from "jquery";
 const CartPage = {
         render() {
             let cart = [];
@@ -27,7 +28,7 @@ const CartPage = {
                 <th>Thao tác</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="card">
             ${cart.map(item => `
             
                 <tr>
@@ -47,8 +48,13 @@ const CartPage = {
                     <button data-id="${item.id}" class="bg-red-500 text-white btn btn-remove mr-2 px-2">Xóa</button>
                     </td>
                 </tr>
+           
             `).join("")}
+            <tr class="mt-3 border-t-2">
+            <td class="text-base font-medium">Tổng tiền<td>
+            <td class="text-right text-base font-medium totalPrice" id="totalPrice">150000 VND</td>
             
+            </tr>
         </tbody>
     </table>
     ${Footer.render()}
@@ -71,6 +77,17 @@ const CartPage = {
                }
             })
         })
+// Tính tổng tiền
+const totalPrice = document.querySelector('.totalPrice')
+let total = 0;
+if(JSON.parse(localStorage.getItem('cart'))){
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    cart.forEach(item=>{
+        total +=item.quantity * Number.parseFloat(item.price);
+    totalPrice.innerHTML=total;
+    })
+}
+       
         Header.afterRender()
     }
    

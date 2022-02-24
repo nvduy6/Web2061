@@ -22,6 +22,10 @@ export const update = (post) => {
     const url = `/products/${post.id}`;
     return instance.put(url, post);
 }
+export const search = (keyword) => {
+    let url = `/products/?q=${keyword}&status_ne=0&_expand=category&_embed=ratings`;
+    return instance.get(url);
+};
 
 
 
